@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/tequila_davinci.mk
+    $(LOCAL_DIR)/superior_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    tequila_davinci-user \
-    tequila_davinci-userdebug \
-    tequila_davinci-eng
+    superior_davinci-user \
+    superior_davinci-userdebug \
+    superior_davinci-eng
