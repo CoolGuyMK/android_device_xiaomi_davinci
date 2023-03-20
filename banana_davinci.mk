@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The SuperiorOS
+# Copyright (C) 2022 The bananaOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,17 +11,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common Superior stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common banana stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
 TARGET_INCLUDE_PIXEL_CHARGER := true
-SUPERIOR_UDFPS_ANIMATIONS := true
-BUILD_WITH_GAPPS := true
-SUPERIOR_OFFICIAL := true
+WITH_GAPPS := true
+BANANA_MAINTAINER := MKツ
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_HAS_UDFPS := true
+TARGET_EXCLUDE_MATLOG := true
 
-PRODUCT_NAME := superior_davinci
+PRODUCT_NAME := banana_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_davinci.mk
+    $(LOCAL_DIR)/banana_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_davinci-user \
-    superior_davinci-userdebug \
-    superior_davinci-eng
+    banana_davinci-user \
+    banana_davinci-userdebug \
+    banana_davinci-eng
